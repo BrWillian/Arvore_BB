@@ -14,19 +14,15 @@ int main()
     int a = 12;
     int b = 14;
     int c = 31;
+    int k = 11;
+    int p = 9;
 
     arvore.insert(&d);
     arvore.insert(&a);
     arvore.insert(&b);
     arvore.insert(&c);
+    arvore.insert(&k);
+    arvore.insert(&p);
 
-    arvore.remove(10);
-
-    if(arvore.search(10))
-    {
-        cout<<"Achou!";
-    }
-    else {
-        cout<<"Não achou!";
-    }
+    arvore.imprima();
 }

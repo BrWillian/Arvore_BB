@@ -5,6 +5,11 @@ tree::tree()
 {
     root = nullptr;
 }
+
+void tree::imprima()
+{
+    inorder(root);
+}
 bool tree::search(int k)
 {
     node *it = root;
@@ -112,7 +117,7 @@ void tree::inorder(node *r)
     if(r)
     {
         inorder(r->left);
-        std::cout<<r->key;
+        std::cout<<r->key<<" ";
         inorder(r->right);
     }
 }
