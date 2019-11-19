@@ -12,10 +12,11 @@ int main()
 
     int d = 10;
     int a = 12;
-    int b = 14;
-    int c = 31;
-    int k = 11;
+    int b = 13;
+    int c = 11;
+    int k = 8;
     int p = 9;
+    int z = 7;
 
     arvore.insert(&d);
     arvore.insert(&a);
@@ -23,6 +24,7 @@ int main()
     arvore.insert(&c);
     arvore.insert(&k);
     arvore.insert(&p);
-
-    arvore.imprima();
+    arvore.insert(&z);
+    //arvore.print();
+    arvore.print_leaf();
 }

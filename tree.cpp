@@ -5,8 +5,23 @@ tree::tree()
 {
     root = nullptr;
 }
-
-void tree::imprima()
+int tree::print_leaf()
+{
+    std::cout<<R_print_leaf(root)<<std::endl;
+}
+int tree::R_print_leaf(node *r)
+{
+    if(!r)
+    {
+        return 0;
+    }
+    if(!(r->left) && !(r->right))
+    {
+        return 1;
+    }
+    return R_print_leaf(r->left) + R_print_leaf(r->right);
+}
+void tree::print()
 {
     inorder(root);
 }
